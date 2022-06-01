@@ -1,0 +1,244 @@
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Escuela de Música Contemporánea</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+
+  <div class="portada">
+
+    <ul class="header">
+      <div class="logo">
+        <li> <img src="img/logo.png" alt="imagen logo"> </li>
+        <li>Escuela de música<br>contemporánea</li>
+
+        <div class="menuH">
+          <svg  id="botonM" class="
+          " viewBox="0 0 65 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0V8.23529H64.2353V0H0ZM0 23.8824V32.1176H64.2353V23.8824H0ZM0 47.7647V56H64.2353V47.7647H0Z" fill="white"/>
+          </svg>
+
+        </div>
+
+      </div>
+       
+
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#artistas">ARTISTAS</a></li>
+        <li><a href="#presentaciones">PRESENTACIONES</a></li>
+        <li><a href="#ubicación">UBICACIÓN</a></li>
+    </ul>
+
+    <h1>NO TE PIERDAS NUESTROS RECITALES</h1>
+    <h2>LOS ESTUDIANTES DE LA ESCUELA DE MÚSICA CONTEMPORÁNEA
+      OFRECEN MÚLTIPLES RECITALES EN EL TRANSCURSO DEL AÑO.</h2>
+
+      <div class="cta" >
+        <a href="#cronogramaCTA"><button type="button" name="cta">Recibir cronograma</button></a>
+      </div>
+    </div>
+
+    <div class="cuerpo">
+      <h3 id="nosotros">SOBRE NOSOTROS</h3>
+      <p>La escuela de música contemporánea es una de las mejores instituciones de latinoamérica. Contamos con modernos programas, dictados por docentes reconocidos tanto en el campo educativo como profesional.
+        Ofrecemos carreras full time que constan de cinco materias de dos horas de duración. En esta modalidad pueden sumarse cursos adicionales.
+        A lo largo del año ofrecemos recitales de todos los géneros musicales con artistas locales y estudiantes de nuestra institución.</p>
+      </div>
+
+
+      <h3>PRÓXIMAS FECHAS</h3>
+      <div class="ProxFechas">
+        <div class="ProxFechasFig1">
+          <img src="img/fechas.jpg"alt="fecha1">
+          <figcaption>Set de Rock</figcaption>
+        </div>
+        <div class="ProxFechasFig2">
+          <img src="img/fechas2.jpg" alt="fecha2">
+          <figcaption>Set de Jazz</figcaption>
+        </div>
+      </div>
+
+
+      <h3 id="artistas">ARTISTAS QUE PARTICIPARON EN RECITALES ANTERIORES</h3>
+      <ul class="imgArtistas">
+        <li>
+          <img src="img/art1.jpg" alt="artista1" style="width:50vw;max-width:500">
+          <figcaption>Marcela De La Cruz</figcaption>
+        </li>
+        <li>
+          <img src="img/art2.jpg" alt="artista2" style="width:50vw;max-width:500">
+          <figcaption>Daniel Johansen</figcaption>
+        </li>
+        <li>
+          <img src="img/art3.jpg"alt="artista3" style="width:50vw;max-width:500">
+          <figcaption>Roberto Lauría</figcaption>
+        </li>
+        <li>
+          <img src="img/art4.jpg" alt="artista4" style="width:50vw;max-width:500">
+          <figcaption>Alejandra Moreno</figcaption>
+        </li>
+        <li>
+          <img src="img/art5.jpg" alt="artista5" style="width:50vw;max-width:500">
+          <figcaption>Rocío Di Quattro</figcaption>
+        </li>
+        <li>
+          <img src="img/art6.jpg" alt="artista6" style="width:50vw;max-width:500">
+          <figcaption>Luciano Braga</figcaption>
+        </li>
+      </ul>
+
+      <div class="video">
+        <div class="subtitulo">
+
+          <h3 id="presentaciones">PRESENTACIONES</h3>
+        </div>
+        <!-- videos carrucel-->
+
+        <div class="carrucel">
+          <input type="radio" name="slider" id="car1" checked>
+          <input type="radio" name="slider" id="car2">
+          <input type="radio" name="slider" id="car3">
+
+
+          <div class="cards">
+            <label class="cardCarr" for="car1" id="img1">
+
+              <video width="500" height="400" controls>
+                <source src="img/vid1.mp4" alt="video1" type="video/mp4">
+                </video>
+              </label>
+              <label class="cardCarr" for="car2" id="img2">
+                <video width="500" height="400" controls>
+                  <source src="img/vid2.mp4" alt="video2" type="video/mp4">
+                  </video>
+                </label>
+                <label class="cardCarr" for="car3" id="img3">
+                  <video width="500" height="400" controls>
+                    <source src="img/vid3.mp4" alt="video3" type="video/mp4">
+                    </video>
+                  </label>
+                </div>
+              </div>
+        </div>
+            <div class="subtitulo">
+              <h3 id="cronogramaCTA">CRONOGRAMA</h3>
+            </div>
+            <div class="cronograma">
+              <div class="cronogramaIzq">
+
+                <h2>DEJANOS TUS DATOS Y <br> RECIBÍ UN CRONOGRAMA <br>PARA NO PERDERTE <br> NUESTROS RECITALES</h2>
+
+              </div>
+              <section id="seccionForm">
+
+              <section id="formulario">
+                <form onsubmit="enviarFormulario(); return false">
+                  <label for="fname">Nombre</label><br />
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    value=""
+                   required
+                    /><br />
+                    <label for="apellido">Apellido</label><br />
+                    <input
+                      type="text"
+                      id="apellido"
+                      name="apellido"
+                     required
+                     /><br />
+                     <label for="residencia">Ciudad de residencia</label><br />
+                     <input
+                       type="text"
+                       id="residencia"
+                       name="residencia"
+                      required
+                    /><br />
+                  <label for="mail">Mail</label><br />
+                  <input
+                    type="text"
+                    id="mail"
+                    name="mail"
+                    required
+                     /><br /><br />
+        
+        
+                   <div id="radio-container">
+                      <label for="frecuencia">¿Con cuánta frecuencia vas a recitales?</label><br />
+                      
+                    <div class="BotonesRadio">
+                      <input
+                      type="radio"
+                      id="frec1"
+                      name="frecuencia"
+                      value="UnaVezPorMes" /> <br>
+                    <label for="frecuencia2">Una vez por mes</label><br />
+                  </div>
+                  <div class="BotonesRadio">
+                    <input type="radio" id="frec2" name="frecuencia" value="UnParDeVeces" />
+                    <label for="frecuencia2">Un par de veces al año</label><br />
+                  </div>
+                  <div class="BotonesRadio">
+                    <input
+                      type="radio"
+                      id="frec3"
+                      name="frecuencia"
+                      value="UnaVezPorAño"
+                    />
+                    <label for="frecuencia3">Una vez al año</label>
+                    </div>
+                  </div>
+                    <input id="boton-form" type="submit" value="Enviar" />
+                  </div>
+                  <br />
+                  <br />
+        
+                </form>
+              </section>
+            </section>
+    
+            <div class="fondo-popup no-mostrar" id="contenedor-feedback">
+              <section id="seccion-feedback" class="popup">
+                
+                <p>  ¡Gracias<span id="nombre-usuario">@nombre</span> por tomarte el tiempo de 
+                  llenar el formulario. En breve recibirás el cronograma en la dirección de correo:  <span id="mail-usuario">@email</span></p>
+                <br />
+          
+                <button onclick="cerrarFeedback()"><img src="img/Group.png" alt="img cruz"></button>
+              </section>
+            </div>
+
+        <div class="subtitulo">
+              <h3 id="ubicación">UBICACIÓN</h3>
+            </div>
+
+            <div class="ubicación">
+
+              <!-- mapa-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8629285058314!2d-58.38777704889476!3d-34.6076274651167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb512b6d57d%3A0xfda9a44393a2fbcf!2sSa%20Contemporary%20Music%20School!5e0!3m2!1sen!2sar!4v1651232801919!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <footer>
+              <!-- redes sociales-->
+              <div class="sf">
+
+                <h4>REDES SOCIALES</h4>
+              </div>
+              <div class="redesSociales">
+
+                <a href="https://www.facebook.com/emcargentina"><img src="img/fb.png" alt="facebook"></a>
+                <a href="https://twitter.com/EMC_Argentina"><img src="img/tw.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/emc.argentina/"><img src="img/ig.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/user/EMCArgentina"><img src="img/yt.png" alt="youtube"></a>
+              </div>
+            </footer>
+            <script src="js/index.js" type="text/javascript"></script>
+          </body>
+          </html>
