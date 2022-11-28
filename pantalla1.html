@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla 1</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="fondo1">
+    <main>
+        <h1 class="transporte1__titulo">¿Cuántas es el transporte que más utilizás?</h1>
+    </main>  
+    <form class="transporte1">
+        <div class="transporte1__auto">
+            <input type="radio" id="auto" name="transporte1" value="AUTO">
+            <label for="auto">
+                <div class="hover-text"><img src="./img/auto.svg" alt="Auto">
+                    <span class="tooltip-text" id="bottom"><img src="img/hover_auto.svg" alt="Gráfico de autos "></span>
+                </div>
+            </label>
+        </div>
+        <div class="transporte1__micro">
+            <input type="radio" id="micro" name="transporte1" value="MICRO">
+            <label for="micro">
+                <div class="hover-text"><img src="./img/micro.svg" alt="Micro">
+                    <span class="tooltip-text" id="bottom"><img src="img/hover_micro.svg" alt="Gráfico de micros"></span>
+                </div>
+            </label>
+        </div>
+        <div class="transporte1__pie">
+            <input type="radio" id="pie" name="transporte1" value="PIE">
+            <label for="pie">
+                <div class="hover-text"><img src="./img/persona.svg" alt="Persona caminando">
+                    <span class="tooltip-text" id="bottom"><img src="img/hover_micro.svg" alt="Gráfico de personas"></span>
+                </div>
+            </label>
+        </div>
+        <div class="transporte1__bici">    
+            <input type="radio" id="bici" name="transporte1" value="BICI">
+            <label for="bici">
+                <div class="hover-text"><img src="./img/bici.svg" alt="Bicicleta">
+                    <span class="tooltip-text" id="bottom"><img src="img/hover_micro.svg" alt="Gráfico de bicicletas"></span>
+                </div>
+            </label>
+        </div>
+        <div class="transporte1__moto">
+            <input type="radio" id="moto" name="transporte1" value="MOTO">
+            <label for="bici">
+                <div class="hover-text"><img src="./img/moto.svg" alt="Moto">
+                    <span class="tooltip-text" id="bottom"><img src="img/hover_micro.svg" alt="Gráfico de motos"></span>
+                </div>
+            </label>
+        </div>
+    </form> 
+    
+    <div class="transporte1__continuar">
+        <button> <a href="">Continuar</a></button>
+    </div>
+</body>
+</html>
