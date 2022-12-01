@@ -1,0 +1,543 @@
+.fondo1{
+    background-color: #FDF6EA;
+}
+.fondo2{
+    background-image: url(../img/fondo2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.progressbar{
+    background: transparent;
+    box-sizing: border-box;
+    display: table;
+    height: 6em;
+    overflow: hidden;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+  }
+  .progressbar::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4em;
+    width: 100%;
+  }
+  .progressbar__radio{
+    display: none;
+  }
+  .progressbar__radio:checked + label ~ label{
+      color:#1C614F;
+  }
+  .progressbar__radio:checked + label ~ label::before{
+        background: #F9C061;
+        border-color: #F9C061;
+      }
+      .progressbar__radio:checked + label ~ label::after{
+        background: #F9C061;
+      }
+
+  .progressbar__label{
+    color: #1C614F;
+    display: table-cell;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+  }
+  .progressbar__label label{
+    margin-bottom: 5rem;
+  }
+  .progressbar__label::before{
+      background: #F05B02;
+      border-radius: 50%;
+      border: 2px solid #F05B02;
+      bottom: calc((100% - 4em) - 2px);
+      content: " ";
+      display: block;
+      height: 2em;
+      left: calc((50% - 1em) - 2px);
+      position: absolute;
+      width: 2em;
+      z-index: 9;
+    }
+    .progressbar__label::after{
+      background: #F05B02;
+      content: "";
+      display: block;
+      height: 10px;
+      position: absolute;
+      border-radius: 10px;
+      right: 5%;
+      top: 3em;
+      width: 138%;
+    }
+    .progressbar__label:last-of-type::after{
+      right: 0;
+      width: 150%;
+    }
+.lugares{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    column-gap: 5%;
+    justify-content: center;
+}
+.lugares__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-size: 0.7rem;
+    color: #1C614F;
+}
+.principal{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.principal__titulo{
+    display:flex;
+    margin-top: 10rem;
+    font-size: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    color: #1C614F;
+}
+.principal__boton{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20rem; 
+}
+
+.transporte1__titulo{
+    display: flex;
+    justify-content: center;
+    color: #1C614F;
+    margin-top: 5rem;
+    margin-bottom: 12rem;
+    font-size: 3rem;
+}
+
+.transporte1{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    column-gap: 5%;
+    justify-content: center;
+}
+.transporte1__auto, .transporte1__micro, .transporte1__pie ,.transporte1__moto, .transporte1__bici {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+input[name="transporte1"]{
+    width: 2rem;
+    height: 2rem;
+    accent-color: #F05B02;
+}
+.transporte1__continuar{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+        
+}
+.transporte1__continuar button{
+text-decoration: none;
+background-color:#F05B02;
+border-radius: 20px;
+padding: 0.5rem 3rem;
+border: none;
+}
+.transporte1__continuar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auto1__titulo{
+    display: flex;
+    justify-content: center;
+    color: #1C614F;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.auto1{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 5%;
+    margin: 16rem 0rem  ;
+    justify-content: center;
+}
+.auto1__10c, .auto1__20c, .auto1__40c ,.auto1__60c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auto1__continuar{
+    display: flex;
+    justify-content: center;
+        
+}
+
+.auto1__continuar button{
+text-decoration: none;
+background-color:#F05B02;
+border-radius: 20px;
+padding: 0.5rem 3rem;
+border: none;
+}
+.auto1__continuar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auto2__contenedor{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+.izquierda__auto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+
+}
+.auto2__subContenedor{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    column-gap: 5%;
+    margin-left: 14rem;
+    color: white;
+    text-align:center;
+}
+
+.auto2__titulo{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
+    
+}
+.auto2__subtitulo__cal{
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+.auto2__subtitulo__min{
+    margin-top: 0.8rem;
+    font-size: 1rem;
+}
+.auto2__subtitulo__contaminacion{
+    width: 90%;
+    height: 100%;
+    font-size: 0.8rem;
+}
+.auto2__subtitulo__contaminacion mark{
+    background-color: rgba(0, 255, 255, 0);
+    color: #EC0909;
+}
+.auto2__imgAuto{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.derecha__auto2{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.auto2__textoSecundario{
+    background-color:#F9C061 ; 
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color: #1C614F;
+    font-size: 1.5rem;
+    margin: 2rem 3rem;
+}
+.auto2__continuar{
+    display: flex;
+    justify-content: center;
+}
+.auto2__continuar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.auto2__continuar button{
+    text-decoration: none;
+    background-color:#F05B02;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    border: none;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    color: black;
+    font-size: 5rem;
+    border-radius: 10px;
+    padding:1rem 0;
+    margin-top:2rem;
+    margin-bottom: 10rem;
+  }
+  .hover-text:hover .tooltip-text {
+    visibility: visible;
+  }
+  
+  .hover-text {
+    position: relative;
+    display: inline-block;
+    margin: 40px;
+    color: black;
+    font-family: Avenir;
+    text-align: center;
+  }
+  #bottom {
+    top: 25px;
+    left: -50%;
+  }
+  .image-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+    width: 100%;
+}
+
+.fondoMapa{
+    background-image: url(../img/mapa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fondoMapa2{
+    background-image: url(../img/mapa2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.via1 ,.via2 ,.via3 ,.via4 {
+    background-color: rgba(255, 0, 0, 0); 
+    border: none;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+.bosqueIcono, .trenIcono,.curuchetIcono, .dardoRochaIcono, .catedralIcono, 
+.estadioIcono, .hospitalIcono{
+    background-color: rgba(255, 0, 0,0); 
+    border: none;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+.bosqueIcono:hover, .trenIcono:hover, .curuchetIcono:hover, .dardoRochaIcono:hover, 
+.catedralIcono:hover,.estadioIcono:hover, .hospitalIcono:hover {
+    background-color: rgb(255, 255, 0,0);
+    opacity: 1;
+    border: none;
+}
+.bosqueIcono{
+    left: 39%;
+    top: 3%;
+}
+.trenIcono{
+    left: 37.5%;
+    top: 10%;
+}
+.curuchetIcono{
+    left:43.5%;
+    top:9%;
+}
+.dardoRochaIcono{
+    left: 41%;
+    top:14%;
+}
+.catedralIcono{
+    left: 42.3%;
+    top:25%;
+}
+.estadioIcono{
+    left: 27.5%;
+    top:48%;
+}
+.hospitalIcono{
+    left: 49.8%;
+    top:27%;
+}
+.via5{
+    position: absolute;
+    left: 46%;
+    top: 18%;
+    border: none;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+}
+.via5:hover{
+    background-color:rgba(0, 128, 128, 0);
+    opacity:1;
+    border: none;
+}
+.via1:hover, .via2:hover, .via3:hover, .via4:hover{
+    background-color: rgb(255, 255, 0,0);
+    opacity: 1;
+    border: none;
+}
+.via1{
+    left: 41%;
+    top:6% ;
+}
+.via2{
+    left: 41%;
+    top:22%;
+}
+.via3{
+    left: 43%;
+    top: 31%;
+}
+.via4{
+    left: 40%;
+    top: 40%;
+}
+
+.tooltip-text {
+    z-index: 2;
+    font-weight:300;
+    width: 15rem;
+    color: #EDBB61;
+    font-size: 1rem;
+    background-color: #1C614F;
+    border-radius: 10px;
+    padding: 0 1rem;
+    top: -80px;
+  }
+  .hover-text {
+    display:flex;
+    margin: 40px;
+    font-family: Avenir;
+    text-align: center;
+  }
+  #fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .hover-text:hover #fade { opacity: 1; }
+  .calle1{
+    position: absolute;
+    left: 22.5%;
+    top: 14.8%;
+}
+
+.calle2{
+    position: absolute;
+    left: 65.8%;
+    top: 19.2%;
+}
+.calle3{
+    position: absolute;
+    left: 31.5%;
+    top: 21.7%;
+}
+.calle4{
+    position: absolute;
+    left: 31.2%;
+    top: 30%;
+}
+.calle5{
+    position: absolute;
+    left:22.7%;
+    top: 20.3%;
+    
+}
+.calle6{
+    position: absolute;
+    left: 43.8%;
+    top: 10.6%;
+}
+.calle7{
+    position: absolute;
+    left:44%;
+    top:29.7%
+}
+.calle8{
+    position: absolute;
+    top:53.8%;
+    left: 56.5%;
+}
+.cardMapa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fondoFiltros{
+    position: absolute;
+    z-index: 0;
+}
+.iconoBici{
+    position: absolute;
+z-index: 1;
+bottom: 30%;
+left: 10%;
+}
+.iconoBiciTxt{
+    position: absolute;
+    bottom: 1.3%;
+    left: 8%;
+    color: #FDF6EA;
+}
+.iconoTurismo{
+    position: absolute;
+z-index: 1;
+bottom: 30%;
+left: 55%;
+}
+.iconoTurismoTxt{
+    position: absolute;
+    bottom: 1.3%;
+    left: 44%;
+    color: #FDF6EA;
+}
+.flechaMapa{
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+.mapa__continuar{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 35rem;
+    padding-right:2rem ;
+    align-items: flex-end;
+}
+.mapa__continuar button{
+    text-decoration: none;
+    background-color:#F05B02;
+    border-radius: 20px;
+    padding: 0.5rem 3rem;
+    border: none;
+}
+.mapa__continuar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
