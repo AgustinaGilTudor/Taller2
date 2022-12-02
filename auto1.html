@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla 0.1</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="fondo1">
+    <h1 class="transporte1__titulo">¿Cuántas cuadras viajás en auto por día?</h1>
+    <div class="lugares">
+        <div class="lugares__img">
+            <img src="./img/bosque.svg" alt="Bosque de La Plata">
+        </div>
+        <div class="lugares__img">
+            <img src="./img/dardo_rocha.svg" alt="Pasaje Dardo Rocha">
+        </div>
+        <div class="lugares__img"> 
+            <img src="./img/catedral.svg" alt="Catedral de La Plata">
+        </div>
+        <div class="lugares__img">
+            <a href="auto2.html"><img src="./img/hospital.svg" alt="Hospital de niños de La Plata"></a>
+        </div>
+        <div class="lugares__img">
+            <img src="./img/estadio.svg" alt="Estadio único de La Plata">
+        </div>    
+  </div>
+
+    <form id="progress" action="" class="progressbar transporte1 lugares_img">
+            <input type="radio" id="step-1" value="steps" name="steps" class="progressbar__radio" checked>
+            <label for="step-1" class="progressbar__label">Bosque</label>
+            <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+            <label for="step-2" class="progressbar__label">Dardo Rocha</label>
+            <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+            <label for="step-3" class="progressbar__label">Catedral</label>
+            <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+            <label for="step-4" class="progressbar__label">Hospital de niños</label>
+            <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+            <label for="step-5" class="progressbar__label">Estadio único</label>  
+      </form>
+      <div class="lugares">
+            <div class="lugares__img">
+                <h2>Punto de partida</h2>
+            </div>
+            <div class="lugares__img">
+                <h2>10 cuadras</h2>
+            </div>
+            <div class="lugares__img">    
+                <h2>20 cuadras</h2>
+            </div>
+            <div class="lugares__img">
+                <h2>40 cuadras</h2>
+            </div>
+            <div class="lugares__img">
+                <h2>60 cuadras</h2>
+            </div>    
+      </div>
+      <div class="transporte1__continuar">
+            <button> <a href="">Continuar</a></button>
+      </div>
+</body>
+</html>
